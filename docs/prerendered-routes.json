@@ -1,0 +1,7 @@
+{
+  "routes": [
+    "/order",
+    "/order/add",
+    "/order/change"
+  ]
+}
