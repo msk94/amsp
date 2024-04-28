@@ -1,0 +1,119 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.brand-logo, .avaya-brand{
+    width: 100px;
+}
+/* .avaya-brand{
+    width: auto;
+    height: fit-content;
+} */
+.brand-name,h2,h6{
+    color: #1b77b3;
+}
+.main-menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgrey;
+}
+.main-menu li{
+    margin: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+.container {
+    width: 98%;
+}
+.location-menu{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    border: none;
+    /* padding-left: initial; */
+    /* padding-right: initial; */
+    position: relative;
+    
+}
+/* .location-menu li{
+    border: 1px solid grey;
+    padding: 10px 0;
+    border-radius: 4px;
+} */
+/* .dropdown{
+    margin: 0 25px 0 0;
+} */
+.location-menu .dropdown .dropdown-toggle {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 150px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    /* font-size: 10px; */
+    background: #f0f0f0;
+    color: #44423b;
+}
+.location-menu .dropdown .dropdown-toggle:hover{
+    background: #dcdcdc;
+} 
+.button-group{
+    /* margin-top: 15px; */
+    width: fit-content;
+}
+.button-group button{
+    padding: 10px 15px;
+    box-sizing: content-box;
+}
+.btn-default{
+    width: 120px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+.button-left{
+    margin-right: 19px;
+}
+.delete{
+    width: 20px;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    margin: 15px;
+}
+.order-label{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: fit-content;
+    background: #fff;
+    z-index: 1;
+    padding: 0 5px;
+    color: #7a7d7e;
+    /* font-size: 12px; */
+}
+.order-dropdown{
+    margin: initial;
+    /* padding: initial; */
+    border: none;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+.dropdown-arrow{
+    margin-left: 10px;
+}
+.dropdown-menu li{
+    cursor: pointer;
+}
+@media (max-width: 390px){
+    .location-menu{
+        display: grid;
+    }
+}

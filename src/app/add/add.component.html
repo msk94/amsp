@@ -1,0 +1,193 @@
+<div class="header">
+    <img class="avaya-brand" src="../../assets/Avaya White Logo 600x300.jpg" alt="Avaya White Logo">
+    <h4 class="brand-name">AMSP</h4>
+    <img class="brand-logo" src="../../assets/Bosch-Logo-2002-2018.png" alt="Bosch-Logo">
+</div>
+<ul class="main-menu nav nav-tabs">
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle order-dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        Order <span class="glyphicon glyphicon-chevron-down dropdown-arrow"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li (click)="goToAddPage()">Add</li>
+        <li (click)="goToChangePage()">Change</li>
+      </ul>
+    </li>
+    <li>Reporting</li>
+    <li>Pool Asset Control</li>
+    <li>List View</li>
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle order-dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          Data <span class="glyphicon glyphicon-chevron-down dropdown-arrow"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>First Option</li>
+            <li>Second Option</li>
+            <li>Third Option</li>
+        </ul>
+      </li>
+  </ul>
+
+<div class="container">
+    <h2>New Order</h2>
+    <h6>Order</h6>
+    <ul class="location-menu nav nav-tabs">
+      <li role="presentation" class="dropdown">
+        <p class="order-label">Region Key</p>  
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          DE <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>First Option</li>
+            <li>Second Option</li>
+            <li>Third Option</li>
+        </ul>
+      </li>
+      <li role="presentation" class="dropdown">
+          <p class="order-label">Cluster Key</p>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            BOSCH ETAS SAK <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>First Option</li>
+            <li>Second Option</li>
+            <li>Third Option</li>
+          </ul>
+        </li>
+        <li role="presentation" class="dropdown">
+          <p class="order-label">Connection Type*</p>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            BCS SAK <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>First Option</li>
+            <li>Second Option</li>
+            <li>Third Option</li>
+          </ul>
+        </li>
+        <li role="presentation" class="dropdown">
+          <p class="order-label">Quantity*</p>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              1
+            </a>
+          </li>
+          <li role="presentation" class="dropdown">
+              <p class="order-label">Remark</p>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                test <span class="glyphicon glyphicon-chevron-down"></span>
+              </a>
+            </li>
+            <li role="presentation" class="dropdown">
+              <p class="order-label">Site Key</p>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  qq <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>First Option</li>
+                    <li>Second Option</li>
+                    <li>Third Option</li>
+                </ul>
+              </li>
+              <li role="presentation" class="dropdown">
+                <p class="order-label">Department</p>
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Stalwart
+                  </a>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <p class="order-label">Cost center</p>
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        US
+                      </a>
+                    </li>
+              <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Monthly PU/SA Price
+                  </a>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        One-time PU/SA Price
+                    </a>
+                  </li>
+                  <li class="dropdown">
+                      <div class="button-group" role="group">
+                          <button type="button" class="btn button-left btn-default btn-primary">Cancel</button>
+                      </div>
+                  </li>
+                  <li class="dropdown">
+                      <div class="button-group" role="group">
+                          <button type="button" class="btn btn-default btn-primary">Next</button>
+                      </div>
+                  </li>
+    </ul>
+    <div class="shopping-cart">
+        <h6>Shopping Cart</h6><h6>File Attachment</h6>  
+    </div> 
+    <div class="table-responsive table-responsive-sm">         
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="active">#</th>
+          <th class="active">Action</th>
+          <th class="active">Connection</th>
+          <th class="active">Article</th>
+          <th class="active">Quantity</th>
+          <th class="active">Additional Info</th>
+          <th class="active">Type</th>
+          <th class="active">SA Price</th>
+          <th class="active">Obligation</th>
+          <th class="active">Single</th>
+          <th class="active">Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of shoppingCart;let i=index">
+          <td>{{item.id}}</td>
+          <td><img [src]="item.action" class="delete"></td>
+          <td>{{item.connection}}</td>
+          <td>{{item.article}}</td>
+          <td>{{item.quantity}}</td>
+          <td>{{item.additionalInfo}}</td>
+          <td>{{item.type}}</td>
+          <td>{{item.saPrice}}</td>
+          <td>{{item.obligation}}</td>
+          <td>{{item.single}}</td>
+          <td>{{item.remarks}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <h6>Article List</h6>   
+    <div class="table-responsive table-responsive-sm">         
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="active">#</th>
+          <th class="active">Action</th>
+          <th class="active">Article</th>
+          <th class="active">Type</th>
+          <th class="active">SA Price</th>
+          <th class="active">Install</th>
+          <th class="active">Change</th>
+          <th class="active">Reduction</th>
+          <th class="active">Single</th>
+          <th class="active">Remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of articleList;let i=index">
+          <td>{{item.id}}</td>
+          <td><img [ngSrc]="item.action" class="delete"></td>
+          <td>{{item.article}}</td>
+          <td>{{item.type}}</td>
+          <td>{{item.saPrice}}</td>
+          <td>{{item.install}}</td>
+          <td>{{item.change}}</td>
+          <td>{{item.reduction}}</td>
+          <td>{{item.single}}</td>
+          <td>{{item.remark}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

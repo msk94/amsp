@@ -1,0 +1,160 @@
+<div class="header">
+    <img class="avaya-brand" src="../../assets/Avaya White Logo 600x300.jpg" alt="Avaya White Logo">
+    <h4 class="brand-name">AMSP</h4>
+    <img class="brand-logo" src="../../assets/Bosch-Logo-2002-2018.png" alt="Bosch-Logo">
+</div>
+<ul class="main-menu nav nav-tabs">
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle order-dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        Order <span class="glyphicon glyphicon-chevron-down dropdown-arrow"></span>
+      </a>
+      <ul class="dropdown-menu">
+        <li (click)="goToAddPage()">Add</li>
+        <li (click)="goToChangePage()">Change</li>
+      </ul>
+    </li>
+    <li>Reporting</li>
+    <li>Pool Asset Control</li>
+    <li>List View</li>
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle order-dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          Data <span class="glyphicon glyphicon-chevron-down dropdown-arrow"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>First Option</li>
+            <li>Second Option</li>
+            <li>Third Option</li>
+        </ul>
+      </li>
+  </ul>
+
+<div class="container">
+    <h2>Order- change/move</h2>
+    <h6>Order Details</h6>
+    <ul class="location-menu nav nav-tabs">
+      <li role="presentation" class="dropdown">
+        <p class="order-label">Region Key</p>  
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          APAC <span class="glyphicon glyphicon-chevron-down"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li>First Option</li>
+            <li>Second Option</li>
+            <li>Third Option</li>
+        </ul>
+      </li>
+      <li role="presentation" class="dropdown">
+          <p class="order-label">Cluster Key*</p>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Bosch AR Bua <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>First Option</li>
+            <li>Second Option</li>
+            <li>Third Option</li>
+          </ul>
+        </li>
+        <li role="presentation" class="dropdown">
+          <p class="order-label">Area code</p>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            +4173(2)234 <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>First Option</li>
+            <li>Second Option</li>
+            <li>Third Option</li>
+          </ul>
+        </li>
+        <li role="presentation" class="dropdown">
+          <p class="order-label">PBX</p>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              FV Asterisk <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>First Option</li>
+                <li>Second Option</li>
+                <li>Third Option</li>
+            </ul>
+          </li>
+          <li role="presentation" class="dropdown">
+              <p class="order-label">Connection Type*</p>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                BCS analog(ACM) <span class="glyphicon glyphicon-chevron-down"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>First Option</li>
+                <li>Second Option</li>
+                <li>Third Option</li>
+              </ul>
+            </li>
+            <li role="presentation" class="dropdown">
+              <p class="order-label">Phone no. selection</p>
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  5
+                </a>
+              </li>
+              <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    PBX New <span class="glyphicon glyphicon-chevron-down"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>First Option</li>
+                    <li>Second Option</li>
+                    <li>Third Option</li>
+                  </ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                      New Connection Type* <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>First Option</li>
+                        <li>Second Option</li>
+                        <li>Third Option</li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                      <div class="button-group" role="group">
+                          <button type="button" class="btn button-left btn-default btn-primary">Next</button>
+                      </div>
+                  </li>
+                  <li class="dropdown">
+                      <div class="button-group" role="group">
+                          <button type="button" class="btn btn-default btn-primary">Reset</button>
+                      </div>
+                  </li>
+    </ul>
+    <h6>Selected Phone</h6>   
+    <div class="table-responsive table-responsive-sm">         
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th class="active">#</th>
+          <th class="active">Action</th>
+          <th class="active">Area code</th>
+          <th class="active">Phone no.</th>
+          <th class="active">Subscriber</th>
+          <th class="active">Connection</th>
+          <th class="active">Department</th>
+          <th class="active">Cost center</th>
+          <th class="active">PBX</th>
+          <th class="active">Site</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of Users;let i=index">
+          <td>{{item.id}}</td>
+          <td><img [src]="item.action" class="delete"></td>
+          <td>{{item.areaCode}}</td>
+          <td>{{item.phoneNo}}</td>
+          <td>{{item.subscriber}}</td>
+          <td>{{item.connection}}</td>
+          <td>{{item.department}}</td>
+          <td>{{item.costCenter}}</td>
+          <td>{{item.pbx}}</td>
+          <td>{{item.site}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
